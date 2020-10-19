@@ -1,0 +1,11 @@
+query SimplePagesQuery ($locale:String!){
+  allContentstackSimplePageExample(filter: {publish_details: {locale: {eq: $locale}}}) {
+    edges {
+      node{
+        title
+        url
+        page_html
+      }
+    }
+  }
+}

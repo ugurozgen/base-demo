@@ -1,0 +1,8 @@
+{
+  "siteMetadata.title": "Sitio de Gatsbinger.",
+  "footer.builtWith": "© {date}, Hecho con <a>Gatsby</a>",
+  "404.notFound": "NO ENCONTRADO",
+  "404.message": "Ha encontrado una ruta que no existe... Triste.",
+  "home.welcome": "Bienvenidos a vuestro sitio.",
+  "home.main_title": "Hola"
+}
