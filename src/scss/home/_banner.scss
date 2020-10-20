@@ -1,0 +1,60 @@
+
+.home-banner{
+  position: relative;
+  height: 100vh;
+  background-color: $primary-dark-blue;
+
+  &__shape{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 30%;
+    height: 80px;
+    background-color: #ece7e1;
+
+    &:after{
+      content: "";
+
+      position: absolute;
+      right: -100px;
+      bottom: 0;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 100px 80px 100px;
+      border-color: transparent transparent #ece7e1 transparent;
+    }
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  &__small-text{
+
+  }
+
+  &__title{
+    color: $white;
+    @include font-size(120);
+  }
+
+  &__text{
+
+  }
+}

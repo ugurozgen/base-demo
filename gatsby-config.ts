@@ -61,15 +61,15 @@ export const siteConfig = {
  */
 const contentstackPlugin = siteConfig.CONTENTSTACK_ENABLED
   ? [
-      {
-        resolve: `gatsby-source-contentstack`,
-        options: {
-          api_key: siteConfig.CONTENTSTACK_API_KEY,
-          delivery_token: siteConfig.CONTENTSTACK_DELIVERY_TOKEN,
-          environment: siteConfig.CONTENTSTACK_ENVIRONMENT,
-        },
+    {
+      resolve: `gatsby-source-contentstack`,
+      options: {
+        api_key: siteConfig.CONTENTSTACK_API_KEY,
+        delivery_token: siteConfig.CONTENTSTACK_DELIVERY_TOKEN,
+        environment: siteConfig.CONTENTSTACK_ENVIRONMENT,
       },
-    ]
+    },
+  ]
   : [];
 
 export default {
@@ -80,6 +80,7 @@ export default {
     author: `wwpub`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-styled-components`,
     {

@@ -1,0 +1,20 @@
+@mixin font-face($name, $path, $weight: 400, $style: normal, $exts: woff2 woff) {
+	$src: null;
+
+	@each $ext in $exts {
+		$src: append($src, url(quote($path + "." + $ext)) format(quote($ext)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+@include font-face("BwGlennSans-Regular", "/assets/font/BwGlennSans-Regular", 400, normal, woff2);
+@include font-face("BwGlennSans-Medium", "/assets/font/BwGlennSans-Medium", 500, normal, woff2);
+
+$BwGlennSans-Regular: "BwGlennSans-Regular";
+$BwGlennSans-Medium: "BwGlennSans-Medium";
