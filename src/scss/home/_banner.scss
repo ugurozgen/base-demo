@@ -2,11 +2,12 @@
 .home-banner{
   position: relative;
   height: 100vh;
-  background-color: $primary-dark-blue;
+  background-color: $ebony;
 
   &__content{
+    position: relative;
     justify-content: center;
-    padding-bottom: 80px;
+    padding-bottom: 130px;
   }
 
   &__text-content{
@@ -19,7 +20,7 @@
   }
 
   &__small-text{
-    color: $light-pink;
+    color: $coral-red;
     font-family: $DINNextLTPro-Bold;
     @include font-size(14);
     font-weight: 700;
@@ -27,7 +28,8 @@
   }
 
   &__title{
-    color: $light-grey-three;
+    margin: 16px 0 0 0;
+    color: $pampas;
     font-family: $Tungsten-Bold;
     @include font-size(120,100);
     font-weight: 700;
@@ -35,9 +37,9 @@
   }
 
   &__text{
-    margin: 5px 0 0 0;
+    margin: 6px 0 0 0;
 
-    color:$light-grey-two;
+    color: $pampas;
     font-family: $DINNextLTPro-Regular;
     @include font-size(24,32);
     font-weight: 400;
@@ -69,7 +71,7 @@
       width: 40px;
       height: 40px;
 
-      background-color: $light-pink;
+      background-color: $coral-red;
 
       transition: background-color 0.3s;
 
@@ -80,8 +82,100 @@
 
     &:hover{
       #{$watch}__icon{
-        background-color: $light-pink;
+        background-color: $coral-red;
       }
+    }
+  }
+
+  &__steps{
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding: 12px 30px 12px 30px;
+    width: 100%;
+    background-color: $coral-red;
+
+    &__title{
+      margin: 0 0 6px 0;
+      color: $whisper;
+      font-family: $DINNextLTPro-Regular;
+      @include font-size(14);
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    &__content{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 0 40px;
+      width: 100%;
+    }
+
+    &__item{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__icon{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      margin: 2px 20px 0 0;
+      width: 32px;
+      height: 32px;
+
+      border: 1px solid $pampas;
+
+      img{
+        width: 16px;
+        height: auto;
+      }
+    }
+
+    &__text{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    &__key{
+      color: $ebony;
+      font-family: $DINNextLTPro-Bold;
+      @include font-size(12);
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    &__val{
+      color: $white;
+      font-family: $DINNextLTPro-Bold;
+      @include font-size(15);
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    &__line{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      width: 52px;
+      border: 1px solid $mulled-wine;
     }
   }
 
@@ -97,7 +191,7 @@
 
     width: 30%;
     height: 80px;
-    background-color: $light-grey;
+    background-color: $pampas;
 
     &:after{
       content: "";
@@ -115,7 +209,7 @@
       height: 0;
       border-style: solid;
       border-width: 0 100px 80px 100px;
-      border-color: transparent transparent $light-grey transparent;
+      border-color: transparent transparent $pampas transparent;
     }
   }
 }
