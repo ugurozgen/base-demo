@@ -13,7 +13,7 @@ const IndexPage = () => {
       <h1>{intl.formatMessage({ id: "home.main_title" })}</h1>
       <p>{intl.formatMessage({ id: "home.welcome" })}</p>
       <p>
-        Now go <strong>build</strong> something <em>great</em>.
+        Now go <strong>build</strong> something amazing <em>great</em>.
       </p>
 
       <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
