@@ -1,0 +1,74 @@
+{
+    "en-us": {
+        "result": [
+            {
+                "id": 1,
+                "body": "It's a very unique content!",
+                "postId": 1
+            },
+            {
+                "id": 2,
+                "body": "Unbelievable web content!",
+                "postId": 2
+            },
+            {
+                "id": 3,
+                "body": "Lorem ipsum dolor sit amet",
+                "postId": 3
+            },
+            {
+                "id": 4,
+                "body": "Amazing!",
+                "postId": 4
+            }
+        ]
+    },
+    "tr-tr": {
+        "result": [
+            {
+                "id": 1,
+                "body": "Benzersiz bir içeriğe sahip!",
+                "postId": 1
+            },
+            {
+                "id": 2,
+                "body": "Gerçekten inanılmaz bir web sitesi",
+                "postId": 2
+            },
+            {
+                "id": 3,
+                "body": "Lorem ipsum mıgır metinlerdir",
+                "postId": 3
+            },
+            {
+                "id": 4,
+                "body": "Süper!",
+                "postId": 4
+            }
+        ]
+    },
+    "es-es": {
+        "result": [
+            {
+                "id": 1,
+                "body": "¡Tiene un contenido único!",
+                "postId": 1
+            },
+            {
+                "id": 2,
+                "body": "Un sitio web realmente asombroso",
+                "postId": 2
+            },
+            {
+                "id": 3,
+                "body": "Lorem ipsum es texto ficticio",
+                "postId": 3
+            },
+            {
+                "id": 4,
+                "body": "¡súper!",
+                "postId": 4
+            }
+        ]
+    }
+}
