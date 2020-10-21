@@ -1,0 +1,225 @@
+### Type definitions saved at 2020-07-29T01:31:15.537Z ###
+### This file gets regenerated when you run the command `npm run contentstack:rebuild_schema` ###
+
+type ContentstackContentTypes implements Node @derivedTypes @dontInfer {
+  created_at: Date @dateformat
+  updated_at: Date @dateformat
+  title: String
+  uid: String
+  _version: Int
+  inbuilt_class: Boolean
+  schema: [ContentstackContentTypesSchema]
+  last_activity: ContentstackContentTypesLast_activity
+  maintain_revisions: Boolean
+  description: String
+  DEFAULT_ACL: ContentstackContentTypesDEFAULT_ACL
+  SYS_ACL: ContentstackContentTypesSYS_ACL
+  options: ContentstackContentTypesOptions
+  abilities: ContentstackContentTypesAbilities
+}
+
+type ContentstackContentTypesSchema @derivedTypes {
+  display_name: String
+  uid: String
+  data_type: String
+  mandatory: Boolean
+  unique: Boolean
+  field_metadata: ContentstackContentTypesSchemaField_metadata
+  multiple: Boolean
+  non_localizable: Boolean
+  blocks: [ContentstackContentTypesSchemaBlocks]
+}
+
+type ContentstackContentTypesSchemaField_metadata {
+  _default: Boolean
+  version: Int
+  allow_rich_text: Boolean
+  description: String
+  multiline: Boolean
+  rich_text_type: String
+}
+
+type ContentstackContentTypesSchemaBlocks @derivedTypes {
+  title: String
+  uid: String
+  schema: [ContentstackContentTypesSchemaBlocksSchema]
+}
+
+type ContentstackContentTypesSchemaBlocksSchema @derivedTypes {
+  data_type: String
+  display_name: String
+  schema: [ContentstackContentTypesSchemaBlocksSchemaSchema]
+  uid: String
+  non_localizable: Boolean
+  multiple: Boolean
+  max_instance: Int
+  mandatory: Boolean
+  unique: Boolean
+}
+
+type ContentstackContentTypesSchemaBlocksSchemaSchema @derivedTypes {
+  data_type: String
+  display_name: String
+  uid: String
+  field_metadata: ContentstackContentTypesSchemaBlocksSchemaSchemaField_metadata
+  non_localizable: Boolean
+  mandatory: Boolean
+  dimension: ContentstackContentTypesSchemaBlocksSchemaSchemaDimension
+  multiple: Boolean
+  unique: Boolean
+  format: String
+  error_messages: ContentstackContentTypesSchemaBlocksSchemaSchemaError_messages
+  display_type: String
+  enum: ContentstackContentTypesSchemaBlocksSchemaSchemaEnum
+}
+
+type ContentstackContentTypesSchemaBlocksSchemaSchemaField_metadata {
+  description: String
+  rich_text_type: String
+  image: Boolean
+  version: Int
+  isTitle: Boolean
+  instruction: String
+}
+
+type ContentstackContentTypesSchemaBlocksSchemaSchemaDimension @derivedTypes {
+  width: ContentstackContentTypesSchemaBlocksSchemaSchemaDimensionWidth
+  height: ContentstackContentTypesSchemaBlocksSchemaSchemaDimensionHeight
+}
+
+type ContentstackContentTypesSchemaBlocksSchemaSchemaDimensionWidth {
+  max: Int
+  min: Int
+}
+
+type ContentstackContentTypesSchemaBlocksSchemaSchemaDimensionHeight {
+  max: Int
+  min: Int
+}
+
+type ContentstackContentTypesSchemaBlocksSchemaSchemaError_messages {
+  format: String
+}
+
+type ContentstackContentTypesSchemaBlocksSchemaSchemaEnum @derivedTypes {
+  advanced: Boolean
+  choices: [ContentstackContentTypesSchemaBlocksSchemaSchemaEnumChoices]
+}
+
+type ContentstackContentTypesSchemaBlocksSchemaSchemaEnumChoices {
+  value: String
+}
+
+type ContentstackContentTypesLast_activity @derivedTypes {
+  environments: [ContentstackContentTypesLast_activityEnvironments]
+}
+
+type ContentstackContentTypesLast_activityEnvironments @derivedTypes {
+  uid: String
+  details: [ContentstackContentTypesLast_activityEnvironmentsDetails]
+}
+
+type ContentstackContentTypesLast_activityEnvironmentsDetails {
+  locale: String
+  time: Date @dateformat
+}
+
+type ContentstackContentTypesDEFAULT_ACL @derivedTypes {
+  others: ContentstackContentTypesDEFAULT_ACLOthers
+  users: [ContentstackContentTypesDEFAULT_ACLUsers]
+  management_token: ContentstackContentTypesDEFAULT_ACLManagement_token
+}
+
+type ContentstackContentTypesDEFAULT_ACLOthers {
+  read: Boolean
+  create: Boolean
+}
+
+type ContentstackContentTypesDEFAULT_ACLUsers @derivedTypes {
+  uid: String
+  read: Boolean
+  sub_acl: ContentstackContentTypesDEFAULT_ACLUsersSub_acl
+}
+
+type ContentstackContentTypesDEFAULT_ACLUsersSub_acl {
+  read: Boolean
+}
+
+type ContentstackContentTypesDEFAULT_ACLManagement_token {
+  read: Boolean
+}
+
+type ContentstackContentTypesSYS_ACL @derivedTypes {
+  roles: [ContentstackContentTypesSYS_ACLRoles]
+  others: ContentstackContentTypesSYS_ACLOthers
+}
+
+type ContentstackContentTypesSYS_ACLRoles @derivedTypes {
+  uid: String
+  read: Boolean
+  sub_acl: ContentstackContentTypesSYS_ACLRolesSub_acl
+  update: Boolean
+  delete: Boolean
+}
+
+type ContentstackContentTypesSYS_ACLRolesSub_acl {
+  create: Boolean
+  read: Boolean
+  update: Boolean
+  delete: Boolean
+  publish: Boolean
+}
+
+type ContentstackContentTypesSYS_ACLOthers @derivedTypes {
+  read: Boolean
+  create: Boolean
+  update: Boolean
+  delete: Boolean
+  sub_acl: ContentstackContentTypesSYS_ACLOthersSub_acl
+}
+
+type ContentstackContentTypesSYS_ACLOthersSub_acl {
+  read: Boolean
+  create: Boolean
+  update: Boolean
+  delete: Boolean
+  publish: Boolean
+}
+
+type ContentstackContentTypesOptions {
+  is_page: Boolean
+  singleton: Boolean
+  title: String
+  url_pattern: String
+  url_prefix: String
+}
+
+type ContentstackContentTypesAbilities {
+  get_one_object: Boolean
+  get_all_objects: Boolean
+  create_object: Boolean
+  update_object: Boolean
+  delete_object: Boolean
+  delete_all_objects: Boolean
+}
+
+type Contentstack_simple_page_example implements Node @derivedTypes @dontInfer {
+  _version: Int
+  locale: String
+  uid: String
+  created_at: Date @dateformat
+  created_by: String
+  page_html: String
+  title: String
+  updated_at: Date @dateformat
+  updated_by: String
+  url: String
+  publish_details: Contentstack_simple_page_examplePublish_details
+}
+
+type Contentstack_simple_page_examplePublish_details {
+  environment: String
+  locale: String
+  time: Date @dateformat
+  user: String
+}

@@ -1,0 +1,8 @@
+{
+  "siteMetadata.title": "Gatsbinger demo site.",
+  "footer.builtWith": "© {date}, Built with <a>Gatsbinger</a>",
+  "404.notFound": "NOT FOUND",
+  "404.message": "You just hit a route that doesn't exist... the sadness.",
+  "home.welcome": "Welcome to your new Gatsbinger site.",
+  "home.main_title": "Hi There"
+}
