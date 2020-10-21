@@ -10,7 +10,7 @@ dotenv.config({
  * These are the locales that will be built by default, unless overriden by the
  * environment variable `LOCALES`.
  */
-const ALL_SUPPORTED_LOCALES = "en-us en-gb es-es es-mx es-ar el-gr tr-tr ko-kr";
+const ALL_SUPPORTED_LOCALES = "en-us tr-tr ar-ae";
 
 /**
  * Space-delimited list of locales to build.
