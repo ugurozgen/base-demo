@@ -13,8 +13,11 @@
 	}
 }
 
-@include font-face("BwGlennSans-Regular", "/assets/font/BwGlennSans-Regular", 400, normal, woff2);
-@include font-face("BwGlennSans-Medium", "/assets/font/BwGlennSans-Medium", 500, normal, woff2);
+@include font-face("Tungsten-Bold", "../fonts/Tungsten/Tungsten-Bold", 700, normal, woff2);
 
-$BwGlennSans-Regular: "BwGlennSans-Regular";
-$BwGlennSans-Medium: "BwGlennSans-Medium";
+@include font-face("DINNextLTPro-Bold", "../fonts/DINNextLTPro/DINNextLTPro-Bold", 700, normal, woff2);
+@include font-face("DINNextLTPro-Regular", "../fonts/DINNextLTPro/DINNextLTPro-Regular", 400, normal, woff2);
+
+$Tungsten-Bold: "Tungsten-Bold";
+$DINNextLTPro-Bold: "DINNextLTPro-Bold";
+$DINNextLTPro-Regular: "DINNextLTPro-Regular";

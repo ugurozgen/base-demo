@@ -1,0 +1,63 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	outline: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+}
+
+::selection {
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {
+}
+
+h4 {
+}
+
+h5 {
+}
+
+h6 {
+}
+
+p {
+	margin: 0;
+}
+
+strong {
+	font-weight: 700;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	list-style: none;
+
+	li {
+		margin: 0;
+		padding: 0;
+	}
+}

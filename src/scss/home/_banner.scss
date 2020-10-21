@@ -4,6 +4,87 @@
   height: 100vh;
   background-color: $primary-dark-blue;
 
+  &__content{
+    justify-content: center;
+    padding-bottom: 80px;
+  }
+
+  &__text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 540px;
+  }
+
+  &__small-text{
+    color: $light-pink;
+    font-family: $DINNextLTPro-Bold;
+    @include font-size(14);
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  &__title{
+    color: $light-grey-three;
+    font-family: $Tungsten-Bold;
+    @include font-size(120,100);
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  &__text{
+    margin: 5px 0 0 0;
+
+    color:$light-grey-two;
+    font-family: $DINNextLTPro-Regular;
+    @include font-size(24,32);
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  &__watch{
+    $watch: &;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 90px 0 0 0;
+
+    color: $white;
+    font-family: $DINNextLTPro-Bold;
+    @include font-size(15);
+    font-weight: 700;
+    font-style: normal;
+
+    &__icon{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      margin: 0 10px 0 0;
+      width: 40px;
+      height: 40px;
+
+      background-color: $light-pink;
+
+      transition: background-color 0.3s;
+
+      img{
+        width: 12px;
+      }
+    }
+
+    &:hover{
+      #{$watch}__icon{
+        background-color: $light-pink;
+      }
+    }
+  }
+
   &__shape{
     position: absolute;
     bottom: 0;
@@ -16,7 +97,7 @@
 
     width: 30%;
     height: 80px;
-    background-color: #ece7e1;
+    background-color: $light-grey;
 
     &:after{
       content: "";
@@ -34,27 +115,7 @@
       height: 0;
       border-style: solid;
       border-width: 0 100px 80px 100px;
-      border-color: transparent transparent #ece7e1 transparent;
+      border-color: transparent transparent $light-grey transparent;
     }
-  }
-
-  &__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-
-  &__small-text{
-
-  }
-
-  &__title{
-    color: $white;
-    @include font-size(120);
-  }
-
-  &__text{
-
   }
 }
