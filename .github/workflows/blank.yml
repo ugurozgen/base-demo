@@ -1,0 +1,12 @@
+on: push
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: repo-sync
+      uses: wei/git-sync@v2
+      with:
+        source_repo: https://github.com/ugurozgen/base-demo.git
+        source_branch: "refs/remotes/source/*"
+        destination_repo: https://${{ secrets.EGH_PAT }}@egh.riotgames.com/ugur-ozgen/demo.git
+        destination_branch: "refs/heads/*"
